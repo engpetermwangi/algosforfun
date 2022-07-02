@@ -1,7 +1,7 @@
 import unittest
 
 
-class BiderectionalLinkedList(object):
+class BidirectionalLinkedList(object):
 
     SPECIAL_KEYS = ["01", "12", "23", "34", "45", "56", "67", "78", "89", "90"]
     SPECIALS = {
@@ -78,7 +78,7 @@ class Node(object):
 
 
 def silly_submissions(s):
-    bdll = BiderectionalLinkedList(s)
+    bdll = BidirectionalLinkedList(s)
     bdll.transform()
     return bdll.to_string()
 
