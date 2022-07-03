@@ -2,13 +2,13 @@
 [**Silly Submissions**](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000435914/00000000008d94f5#problem) from Round H 2021 of [Google Kick Start](https://codingcompetitions.withgoogle.com/kickstart)
 
 # Solutions in Python3
-## [Naive](/silly_submissions_naive.py)
+## [Naive](./silly_submissions_naive.py)
 1. Use the built-in string function `str.replace` to replace the special sequence of characters with the respective character.
 2. Terminate when no further changes can be done
 
 > `str.replace` searches through the string from the start through to the end every time it's called. There is need for a more efficient way to find and update characters that need to be updated.
 
-## [Efficient](/silly_submissions_efficient.py)
+## [Efficient](./silly_submissions_efficient.py)
 1. Create a **bidirectional linked list**, also termed as [**doubly linked list**](https://en.wikipedia.org/wiki/Doubly_linked_list) from the string while:
     * holding on to the head for the final back to string transformation
     * identifying points of interest as a mapping of each of the special sequences to a set of node instances that need the transformation like so:
