@@ -33,7 +33,7 @@ class BidirectionalLinkedList(object):
             prev = node
 
     def transform(self):
-        while any(self.poi.get(s) for s in self.SPECIAL_KEYS):
+        while any(self.poi.values()):
             for special in self.SPECIAL_KEYS:
                 for node in self.poi.get(special):
                     if self.nodes_are_interesting(node, node.next_node):
